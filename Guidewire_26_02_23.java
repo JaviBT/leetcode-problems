@@ -5,7 +5,11 @@ import java.util.*;
 // System.out.println("this is a debug message");
 
 class Solution {
-    public int solution(int N) {
+    public static void main(String[] args) {
+        System.out.println(String.format("RETURN: %d", solution(123)));
+    };
+
+    public static int solution(int N) {
         // Turn N into a string and split it into an array of characters to get the digits
         String[] digits = Integer.toString(N).split("");
         // Calculate the sum of the digits of N (sum_digits_N)
@@ -29,11 +33,16 @@ class Solution {
             }
             i++;
         }
+        return -1;
     };
 }
 
 class Solution2 {
-    public int solution(int A, int B, int C, int D) {
+    public static void main(String[] args) {
+        System.out.println(solution2(1,2,3,4));
+    };
+
+    public static int solution2(int A, int B, int C, int D) {
         int valid_times = 0;
         int[] digits = {A, B, C, D};
         Arrays.sort(digits);
