@@ -18,6 +18,7 @@ class Solution:
 
         return -1
     
+    
 exercise = Solution()
 input = [2,2,1,1,1,2,2]
 expected_output = 2
