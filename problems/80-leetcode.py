@@ -16,5 +16,8 @@ class Solution:
 
 exercise = Solution()
 input = [0,0,0,1,1,1,1,2,2,2,2,2,2,3,3,3,4,4,4,4,4,5,5,6]
+expected_output = 13
 output = exercise.removeDuplicates(input)
 print(output, input[:output])
+assert output == expected_output, "Wrong answer"
+print("Accepted")
