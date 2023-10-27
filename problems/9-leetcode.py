@@ -1,4 +1,7 @@
 # 9. Palindrome Number
+# https://leetcode.com/problems/palindrome-number/
+
+# Solution by: Javi Barranco
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:

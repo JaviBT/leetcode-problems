@@ -1,3 +1,4 @@
+# 2. Add Two Numbers
 # https://leetcode.com/problems/add-two-numbers/
 
 # Solution by: Javi Barranco
@@ -36,3 +37,33 @@ class Solution:
             carry //= 10
             
         return sol.next
+    
+    def same(self, l1, l2):
+        while l1 != None and l2 != None:
+            if l1.val != l2.val: return False
+            l1 = l1.next
+            l2 = l2.next
+        
+        if l1 != None or l2 != None: return False
+        
+        return True
+    
+
+exercise = Solution()
+
+input = ListNode(2)
+input.next = ListNode(4)
+input.next.next = ListNode(3)
+
+input2 = ListNode(5)
+input2.next = ListNode(6)
+input2.next.next = ListNode(4)
+
+expected_output = ListNode(7)
+expected_output.next = ListNode(0)
+expected_output.next.next = ListNode(8)
+
+output = exercise.addTwoNumbers(input, input2)
+print(output)
+assert exercise.same(output, expected_output), "Wrong answer"
+print("Accepted")

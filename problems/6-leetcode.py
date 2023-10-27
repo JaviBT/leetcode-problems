@@ -1,4 +1,7 @@
 # 6. Zigzag Conversion
+# https://leetcode.com/problems/zigzag-conversion/
+
+# Solution by: Javi Barranco
 
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
