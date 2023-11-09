@@ -22,11 +22,14 @@ num_problems = len(problems)
 num_accepted = 0
 total_time_taken = 0
 
-# Order the problems by number using the file name
+# Order the problems by number using the file name (_[problem_number]_leetcode.py)
 temp = []
 for problem in problems:
+    # Ignore __* files or directories
+    if problem.startswith("__"):
+        continue
     # Get the problem number
-    problem_number = int(problem.split("-")[0])
+    problem_number = problem.split("_")[1]
     temp.append((problem_number, problem))
 
 # Sort the problems by number
@@ -46,7 +49,7 @@ print("-" * 98)
 # Run the scripts in the problems directory
 for problem in problems:
     # Get the problem number
-    problem_number = problem.split("-")[0]
+    problem_number = problem.split("_")[1]
 
     # Get the problem name from the first line of the script
     problem_path = os.path.join(problems_dir, problem)
