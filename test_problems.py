@@ -16,7 +16,7 @@ problems_dir = os.path.join(current_dir, "problems")
 problems = os.listdir(problems_dir)
 
 # Number of problems
-num_problems = len(problems)
+num_problems = 0
 
 # Total counts
 num_accepted = 0
@@ -31,6 +31,7 @@ for problem in problems:
     # Get the problem number
     problem_number = problem.split("_")[1]
     temp.append((problem_number, problem))
+    num_problems += 1
 
 # Sort the problems by number
 temp.sort()
