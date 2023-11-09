@@ -29,7 +29,7 @@ for problem in problems:
     if problem.startswith("__"):
         continue
     # Get the problem number
-    problem_number = problem.split("_")[1]
+    problem_number = int(problem.split("_")[1])
     temp.append((problem_number, problem))
     num_problems += 1
 
