@@ -1,3 +1,15 @@
+# Import ListNode and Solution from problems/2-leetcode.py
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from problems._2_leetcode import ListNode, Solution
+
+# Read arguments from command line (log)
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("-l", "--log", help="Show individual test results", type=int, choices=[True, False], default=False)
+args = parser.parse_args()
+log = args.log
+
 tests = [
 	{
 	"input": {
@@ -140,18 +152,6 @@ tests = [
 	"expected_output": [5, 7, 9]
 	},
 ]
-
-# Import ListNode and Solution from problems/2-leetcode.py
-import os, sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from problems._2_leetcode import ListNode, Solution
-
-# Read arguments from command line (log)
-import argparse
-parser = argparse.ArgumentParser()
-parser.add_argument("-l", "--log", help="Show individual test results", type=int, choices=[True, False], default=False)
-args = parser.parse_args()
-log = args.log
 
 exercise = Solution()
 
