@@ -12,7 +12,7 @@
 # Output: true
 
 class Solution:
-    def containsDuplicate(self, nums):
+    def containsDuplicate(self, nums: [int]) -> bool:
         exist_dict = {}
 
         for num in nums:
@@ -22,7 +22,7 @@ class Solution:
                 exist_dict[num] = 1
 
         return False
-    
+
 
 exercise = Solution()
 

@@ -58,6 +58,22 @@ class Solution2: # TimeLimitExceeded
                 return False
 
         return True
+    
+
+class Solution3:
+    def groupAnagrams(self, strs: [str]) -> [[str]]:
+
+        sorted_anagram_dict = {}
+
+        for string in strs:
+            sorted_string = ''.join(sorted(string))
+
+            if str(sorted_string) in sorted_anagram_dict.keys():
+                sorted_anagram_dict[sorted_string].append(string)
+            else:
+                sorted_anagram_dict[sorted_string] = [string]
+
+        return sorted_anagram_dict.values()
 
 
 def same(a: [[str]], b: [[str]]) -> bool:

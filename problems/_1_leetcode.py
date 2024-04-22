@@ -27,6 +27,20 @@ class Solution:
         return
 
 
+class Solution2:
+    def twoSum(self, nums: [int], target: int) -> [int]:
+        
+        wanted_dict = {}
+
+        for i, num in enumerate(nums):
+            if target - num in wanted_dict.keys():
+                return [i, wanted_dict[target - num]]
+            else:
+                wanted_dict[num] = i
+
+        return None
+
+
 exercise = Solution()
 
 input = [2,7,11,15]

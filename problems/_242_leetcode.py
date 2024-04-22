@@ -23,6 +23,31 @@ class Solution:
         return True
     
 
+class Solution2:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t): return False
+
+        char_sum = {}
+
+        for i in range(len(s)):
+            s_char, t_char = s[i], t[i]
+
+            if s_char in char_sum.keys():
+                char_sum[s_char] += 1
+            else:
+                char_sum[s_char] = 1
+
+            if t_char in char_sum.keys():
+                char_sum[t_char] -= 1
+            else:
+                char_sum[t_char] = -1
+
+        for val in char_sum.values():
+            if val != 0: return False
+
+        return True
+    
+
 exercise = Solution()
 input = "anagram"
 input2 = "nagaram"
