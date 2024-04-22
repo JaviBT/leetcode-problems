@@ -2,8 +2,9 @@
 
 This repository contains my solutions to various LeetCode problems. Happy coding! 🚀
 
-## Problems Solved:
+## Problems Solved: (70)
 
+- **Problem 1: Two Sum**
 - **Problem 2: Add Two Numbers**
 - **Problem 3: Longest Substring Without Repeating Characters**
 - **Problem 6: Zigzag Conversion**
@@ -31,30 +32,45 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 92: Reverse Linked List II**
 - **Problem 100: Same Tree**
 - **Problem 101: Symmetric Tree**
-- **Problem 104: Maximum Depth of Binary Tree**
+- **Problem 104: Maximun Depth of Binary Tree**
+- **Problem 105: Construct Binary Tree from Preorder and Inorder Traversal**
+- **Problem 106: Construct Binary Tree from Inorder and Postorder Traversal**
+- **Problem 112: Path Sum**
+- **Problem 114: Flatten Binary Tree to Linked List**
+- **Problem 117: Populating Next Right Pointers in Each Node II**
 - **Problem 118: Pascal's Triangle**
 - **Problem 121: Best Time to Buy and Sell Stock**
 - **Problem 122: Best Time to Buy and Sell Stock II**
 - **Problem 125: Valid Palindrome**
 - **Problem 128: Longest Consecutive Sequence**
+- **Problem 129: Sum Root to Leaf Numbers**
 - **Problem 134: Gas Station**
+- **Problem 136: Single Number**
 - **Problem 141: Linked List Cycle**
 - **Problem 150: Evaluate Reverse Polish Notation**
 - **Problem 151: Reverse Words in a String**
 - **Problem 167: Two Sum II - Input array is sorted**
 - **Problem 169: Majority Element**
 - **Problem 189: Rotate Array**
+- **Problem 190: Reverse Bits**
+- **Problem 191: Number of 1 Bits**
 - **Problem 200: Number of Islands**
 - **Problem 202: Happy Number**
 - **Problem 205: Isomorphic Strings**
 - **Problem 206: Reverse Linked List**
 - **Problem 209: Minimum Size Subarray Sum**
+- **Problem 217: Contains Duplicate**
 - **Problem 219: Contains Duplicate II**
+- **Problem 222: Count Complete Tree Nodes**
 - **Problem 226: Invert Binary Tree**
 - **Problem 228: Summary Ranges**
+- **Problem 236: Lowest Common Ancestor of a Binary Tree**
+- **Problem 238: Product of Array Except Self**
 - **Problem 242: Valid Anagram**
 - **Problem 274: H-Index**
 - **Problem 289: Game of Life**
 - **Problem 290: Word Pattern**
+- **Problem 347: Top K Frequent Elements**
 - **Problem 392: Is Subsequence**
 - **Problem 452: Minimun Number of Arrows to Burst Balloons**
+- **Problem 637: Average of Levels in Binary Tree**

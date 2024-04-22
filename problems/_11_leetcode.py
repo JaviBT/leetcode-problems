@@ -30,6 +30,22 @@ class Solution2: # Timeout
         return max_area
     
 
+class Solution3:
+    def maxArea(self, height: [int]) -> int:
+        l, r = 0, len(height) - 1
+
+        largest = 0
+
+        while l != r:
+            area = min(height[l], height[r]) * (r - l)
+            largest = max(largest, area)
+
+            if height[l] > height[r]: r -= 1
+            else: l += 1
+
+        return largest
+    
+
 exercise = Solution()
 input = [1,8,6,2,5,4,8,3,7]
 expected_output = 49

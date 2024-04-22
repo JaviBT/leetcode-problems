@@ -17,6 +17,19 @@ class Solution:
         return None
   
 
+class Solution2:
+    def twoSum(self, numbers: [int], target: int) -> [int]:
+        # Constant extra-space means we can't use hashmaps/dictionaries
+        l, r = 0, len(n) - 1
+
+        while l != r:
+            if numbers[l] + numbers[r] == target: return [l + 1, r + 1]
+            elif numbers[l] + numbers[r] < target: l += 1
+            elif numbers[l] + numbers[r] > target: r -= 1
+
+        return 
+    
+
 exercise = Solution()
 input = [2,7,11,15]
 expected_output = [1,2]
