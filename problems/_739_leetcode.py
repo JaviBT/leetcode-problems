@@ -11,7 +11,7 @@
 # Output: [1,1,4,2,1,1,0,0]
 
 class Solution:
-    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+    def dailyTemperatures(self, temperatures: [int]) -> [int]:
         output = [0] * len(temperatures)
         stack = []
 
