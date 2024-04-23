@@ -21,6 +21,24 @@ class Solution:
                 stack.append(c)
         
         return int(stack.pop())
+    
+
+class Solution2:
+    def evalRPN(self, tokens: [str]) -> int:
+        stack = []
+
+        for tok in tokens:
+            if tok in ['+', '*', '-', '/']:
+                b = stack.pop()
+                a = stack.pop()
+                if tok == '+': stack.append(int(a + b))
+                elif tok == '-': stack.append(int(a - b))
+                elif tok == '*': stack.append(int(a * b))
+                elif tok == '/': stack.append(int(a / b))
+            else:
+                stack.append(int(tok))
+
+        return int(stack.pop())
 
 
 exercise = Solution()
