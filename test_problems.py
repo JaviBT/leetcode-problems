@@ -61,7 +61,7 @@ for problem in problems:
     problem_name = problem_name.split(".", 1)[1].strip()
 
 
-    # Run the problem
+    # Run the problem (Windows)
     start_time = time.time()
     if os.name == 'nt':  # For Windows
         command = ["python", problem_path]
@@ -70,8 +70,8 @@ for problem in problems:
     problem_output = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     end_time = time.time()
 
-    # Get the problem status from last line of the output
-    problem_status = problem_output.stdout.decode("utf-8").split("\n")[-2]
+    # Get the problem status from the last line of the output
+    problem_status = problem_output.stdout.decode("utf-8").split("\n")[-2].strip()
     if problem_status == "Accepted":
         num_accepted += 1
 
