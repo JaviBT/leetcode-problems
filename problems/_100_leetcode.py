@@ -6,6 +6,7 @@ class TreeNode:
         self.left  = left
         self.right = right
 
+
 class Solution:
     def isSameTree(self, p: [TreeNode], q: [TreeNode]) -> bool:
         if p is None and q is None:
@@ -17,6 +18,13 @@ class Solution:
             return True
         return False
     
+
+class Solution2:
+    def isSameTree(self, p: [TreeNode], q: [TreeNode]) -> bool:
+        if (p == None and q == None): return True
+        elif p == None or q == None: return False
+
+        return self.isSameTree(p.right, q.right) and self.isSameTree(p.left, q.left) and (p.val == q.val)
 
 exercise = Solution()
 input = TreeNode(1, TreeNode(2), TreeNode(3))
