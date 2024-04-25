@@ -10,6 +10,12 @@ class Solution:
     def maxDepth(self, root: [TreeNode]) -> int:
         if root is None: return 0
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
+    
+
+class Solution2:
+    def maxDepth(self, root: [TreeNode]) -> int:
+        if root == None: return 0
+        return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
 
 
 exercise = Solution()

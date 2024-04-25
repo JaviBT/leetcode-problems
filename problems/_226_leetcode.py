@@ -6,6 +6,16 @@ class TreeNode:
         self.left  = left
         self.right = right
 
+def isSameTree(p: [TreeNode], q: [TreeNode]) -> bool:
+        if p is None and q is None:
+            return True
+        elif p is None or q is None:
+            return False
+
+        if p.val == q.val and isSameTree(p.left, q.left) and isSameTree(p.right, q.right):
+            return True
+        return False
+
 class Solution:
     def invertTree(self, root: [TreeNode]) -> [TreeNode]:
         if root is None:
@@ -16,21 +26,25 @@ class Solution:
         root.left, root.right = root.right, root.left
 
         return root
-    
-    def isSameTree(self, p: [TreeNode], q: [TreeNode]) -> bool:
-        if p is None and q is None:
-            return True
-        elif p is None or q is None:
-            return False
+       
 
-        if p.val == q.val and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right):
-            return True
-        return False
+class Solution2:
+    def invertTree(self, root: [TreeNode]) -> [TreeNode]:
+        self.invertTreeRec(root)
+        return root
+    
+    def invertTreeRec(self, root: [TreeNode]) -> [TreeNode]:
+        if root == None: return
+
+        root.left, root.right = root.right, root.left
+        self.invertTreeRec(root.left)
+        self.invertTreeRec(root.right)
+
 
 exercise = Solution()
 input = TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(7, TreeNode(6), TreeNode(9)))
 expected_output = TreeNode(4, TreeNode(7, TreeNode(9), TreeNode(6)), TreeNode(2, TreeNode(3), TreeNode(1)))
 output = exercise.invertTree(input)
 print(output)
-assert exercise.isSameTree(output, expected_output), "Wrong answer"
+assert isSameTree(output, expected_output), "Wrong answer"
 print("Accepted")
