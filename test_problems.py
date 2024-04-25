@@ -43,9 +43,9 @@ for problem in temp:
 print("Leetcode Problems by Javi Barranco")
 print("(Only one test case is used for each problem)")
 print("")
-print("-" * 98)
-print("Problem".ljust(13) + "Name".ljust(60) + "Status".ljust(16) + "Time".ljust(5))
-print("-" * 98)
+print("-" * 99)
+print("Problem".ljust(14) + "Name".ljust(60) + "Status".ljust(16) + "Time".ljust(5))
+print("-" * 99)
 
 # Run the scripts in the problems directory
 for problem in problems:
@@ -86,10 +86,10 @@ for problem in problems:
         status_emoji = ("\033[91m" + "✗" + "\033[0m")
 
     # Print the problem number, name, status, score and time taken (Time in miliseconds and 3 decimal places)
-    print("Problem " + "{}".format(problem_number).ljust(3) + ": " + problem_name.ljust(60) + problem_status.ljust(10) + "{}".format(status_emoji) + "     " + str(round(problem_time_taken * 1000, 3)).ljust(6) + " ms")
+    print("Problem " + "{}".format(problem_number).ljust(4) + ": " + problem_name.ljust(60) + problem_status.ljust(10) + "{}".format(status_emoji) + "     " + str(round(problem_time_taken * 1000, 3)).ljust(6) + " ms")
 
 # Totals
-print("-" * 98)
+print("-" * 99)
 print("\n----------- Results ------------")
 print("Overall score".ljust(20) + ": " + str(num_accepted) + "/" + str(num_problems))
 print("Overall time taken".ljust(20) + ": " + str(round(total_time_taken * 1000, 3)).ljust(6) + " ms")
