@@ -2,7 +2,7 @@
 
 This repository contains my solutions to various LeetCode problems. Happy coding! 🚀
 
-## Problems Solved: (70)
+## Problems Solved: (90)
 
 - **Problem 1: Two Sum**
 - **Problem 2: Add Two Numbers**
@@ -13,7 +13,10 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 12: Integer to Roman**
 - **Problem 15: 3Sum**
 - **Problem 19: Remove Nth Node From End of List**
+- **Problem 20: Valid Parentheses**
+- **Problem 22: Generate Parentheses**
 - **Problem 28: Find the Index of the First Occurrence in a String**
+- **Problem 33: Search in Rotated Sorted Array**
 - **Problem 36: Valid Sudoku**
 - **Problem 45: Jump Game II**
 - **Problem 48: Rotate Image**
@@ -25,6 +28,8 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 61: Rotate List**
 - **Problem 67: Add Binary**
 - **Problem 73: Set Matrix Zeroes**
+- **Problem 74: Search a 2D Matrix**
+- **Problem 76: MInimun Window Substring**
 - **Problem 80: Remove Duplicates from Sorted Array II**
 - **Problem 82: Remove Duplicates from Sorted List II**
 - **Problem 83: Remove Duplicates from Sorted List**
@@ -32,9 +37,11 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 92: Reverse Linked List II**
 - **Problem 100: Same Tree**
 - **Problem 101: Symmetric Tree**
+- **Problem 102: Binary Tree Level Order Traversal**
 - **Problem 104: Maximun Depth of Binary Tree**
 - **Problem 105: Construct Binary Tree from Preorder and Inorder Traversal**
 - **Problem 106: Construct Binary Tree from Inorder and Postorder Traversal**
+- **Problem 110: Balanced Binary Tree**
 - **Problem 112: Path Sum**
 - **Problem 114: Flatten Binary Tree to Linked List**
 - **Problem 117: Populating Next Right Pointers in Each Node II**
@@ -49,11 +56,13 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 141: Linked List Cycle**
 - **Problem 150: Evaluate Reverse Polish Notation**
 - **Problem 151: Reverse Words in a String**
+- **Problem 153: Find Minimum in Rotated Sorted Array**
 - **Problem 167: Two Sum II - Input array is sorted**
 - **Problem 169: Majority Element**
 - **Problem 189: Rotate Array**
 - **Problem 190: Reverse Bits**
 - **Problem 191: Number of 1 Bits**
+- **Problem 199: Binary Tree Right Side View**
 - **Problem 200: Number of Islands**
 - **Problem 202: Happy Number**
 - **Problem 205: Isomorphic Strings**
@@ -64,6 +73,7 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 222: Count Complete Tree Nodes**
 - **Problem 226: Invert Binary Tree**
 - **Problem 228: Summary Ranges**
+- **Problem 235: Lowest Common Ancestor of a Binary Search Tree**
 - **Problem 236: Lowest Common Ancestor of a Binary Tree**
 - **Problem 238: Product of Array Except Self**
 - **Problem 242: Valid Anagram**
@@ -72,5 +82,15 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 290: Word Pattern**
 - **Problem 347: Top K Frequent Elements**
 - **Problem 392: Is Subsequence**
+- **Problem 424: Longest Repeating Character Replacement**
 - **Problem 452: Minimun Number of Arrows to Burst Balloons**
+- **Problem 543: Diameter of Binary Tree**
+- **Problem 567: Permutation in String**
+- **Problem 572: Subtree of Another Tree**
 - **Problem 637: Average of Levels in Binary Tree**
+- **Problem 704: Binary Search**
+- **Problem 739: Daily Temperatures**
+- **Problem 853: Car Fleet**
+- **Problem 875: Koko Eating Bananas**
+- **Problem 981: Time Based Key-Value Store**
+- **Problem 1448: Count Good Nodes in Binary Tree**
