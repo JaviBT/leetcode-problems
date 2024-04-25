@@ -10,6 +10,8 @@
 # Input: root = [3,9,20,null,null,15,7]
 # Output: [[3],[9,20],[15,7]]
 
+import collections
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -36,7 +38,28 @@ class Solution:
         self.levelOrderRec(root.right, level + 1)
 
 
-exercise = Solution()
+class Solution2:
+    def levelOrder(self, root: [TreeNode]) -> [[int]]:
+        res = []
+
+        q = collections.deque()
+        q.append(root)
+
+        while q:
+            length = len(q)
+            level = []
+            for i in range(length):
+                node = q.popleft()
+                if node: 
+                    level.append(node.val)
+                    q.append(node.left)
+                    q.append(node.right)
+            if level: res.append(level)
+
+        return res
+
+
+exercise = Solution2()
 
 input = TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
 
