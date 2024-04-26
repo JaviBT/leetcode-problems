@@ -10,12 +10,22 @@
 # Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
 # Output: [3,9,20,null,null,15,7]
 
+import collections
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
+def sameTree(t1, t2):
+        if not t1 and not t2: return True
+        if not t1 or not t2: return False
+        if t1.val != t2.val: return False
+
+        return sameTree(t1.left, t2.left) and sameTree(t1.right, t2.right)
+
 
 class Solution:
     def buildTree(self, preorder: [int], inorder: [int]) -> [TreeNode]:
@@ -31,12 +41,20 @@ class Solution:
 
         return root
     
-    def sameTree(self, t1, t2):
-        if not t1 and not t2: return True
-        if not t1 or not t2: return False
-        if t1.val != t2.val: return False
 
-        return self.sameTree(t1.left, t2.left) and self.sameTree(t1.right, t2.right)
+class Solution2:
+    def buildTree(self, preorder: [int], inorder: [int]) -> [TreeNode]:
+        q = collections.deque(preorder)
+        root_val = q.popleft()
+        root_index = inorder.index(root_val)
+        return TreeNode(root_val, self.buildTreeRec(q, inorder[:root_index]), self.buildTreeRec(q, inorder[root_index+1:]))
+
+    def buildTreeRec(self, preorder: [int], inorder: [int]) -> [TreeNode]:
+        if not inorder: return None
+
+        node_val = preorder.popleft()
+        node_index = inorder.index(node_val)
+        return TreeNode(node_val, self.buildTreeRec(preorder, inorder[:node_index]), self.buildTreeRec(preorder, inorder[node_index+1:]))
 
 
 exercise = Solution()
@@ -52,5 +70,5 @@ expected_output.right.right = TreeNode(7)
 
 output = exercise.buildTree(input, input2)
 print(output)
-assert exercise.sameTree(output, expected_output), "Wrong answer"
+assert sameTree(output, expected_output), "Wrong answer"
 print("Accepted")
