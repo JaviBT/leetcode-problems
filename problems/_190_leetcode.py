@@ -14,6 +14,23 @@ from math import log
 
 class Solution:
     def reverseBits(self, n: int) -> int:
+        string = ''
+
+        while n != 0:
+            string += str(n % 2)
+            n = int(n/2)
+
+        string = string + '0' * (32 - len(string))
+
+        num = 0
+        for i in range(len(string)):
+            num += 2**i if string[-i - 1] == '1' else 0 
+
+        return num
+    
+
+class Solution2:
+    def reverseBits(self, n: int) -> int:
         
         p = 0
         sum = 0
@@ -31,7 +48,7 @@ class Solution:
         
         return sum
 
-class Solution2:
+class Solution3:
     def reverseBits(self, n: int) -> int:
         
         p = 0
