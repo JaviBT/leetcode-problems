@@ -2,8 +2,7 @@
 
 This repository contains my solutions to various LeetCode problems. Happy coding! 🚀
 
-## Problems Solved: (90)
-
+## Problems Solved: (109) (Updated: 2024-04-28)
 - **Problem 1: Two Sum**
 - **Problem 2: Add Two Numbers**
 - **Problem 3: Longest Substring Without Repeating Characters**
@@ -18,7 +17,11 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 28: Find the Index of the First Occurrence in a String**
 - **Problem 33: Search in Rotated Sorted Array**
 - **Problem 36: Valid Sudoku**
+- **Problem 39: Combination Sum**
+- **Problem 40: Combination Sum II**
+- **Problem 42: Trapping Rain Water**
 - **Problem 45: Jump Game II**
+- **Problem 46: Permutations**
 - **Problem 48: Rotate Image**
 - **Problem 49: Group Anagrams**
 - **Problem 54: Spiral Matrix**
@@ -30,11 +33,15 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 73: Set Matrix Zeroes**
 - **Problem 74: Search a 2D Matrix**
 - **Problem 76: MInimun Window Substring**
+- **Problem 78: Subsets**
+- **Problem 79: Word Search**
 - **Problem 80: Remove Duplicates from Sorted Array II**
 - **Problem 82: Remove Duplicates from Sorted List II**
 - **Problem 83: Remove Duplicates from Sorted List**
 - **Problem 86: Partition List**
+- **Problem 90: Subsets II**
 - **Problem 92: Reverse Linked List II**
+- **Problem 98: Validate Binary Search Tree**
 - **Problem 100: Same Tree**
 - **Problem 101: Symmetric Tree**
 - **Problem 102: Binary Tree Level Order Traversal**
@@ -48,6 +55,7 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 118: Pascal's Triangle**
 - **Problem 121: Best Time to Buy and Sell Stock**
 - **Problem 122: Best Time to Buy and Sell Stock II**
+- **Problem 124: Binary Tree Maximum Path Sum**
 - **Problem 125: Valid Palindrome**
 - **Problem 128: Longest Consecutive Sequence**
 - **Problem 129: Sum Root to Leaf Numbers**
@@ -68,11 +76,13 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 205: Isomorphic Strings**
 - **Problem 206: Reverse Linked List**
 - **Problem 209: Minimum Size Subarray Sum**
+- **Problem 215: Kth Largest Element in an Array**
 - **Problem 217: Contains Duplicate**
 - **Problem 219: Contains Duplicate II**
 - **Problem 222: Count Complete Tree Nodes**
 - **Problem 226: Invert Binary Tree**
 - **Problem 228: Summary Ranges**
+- **Problem 230: Kth Smallest Element in a BST**
 - **Problem 235: Lowest Common Ancestor of a Binary Search Tree**
 - **Problem 236: Lowest Common Ancestor of a Binary Tree**
 - **Problem 238: Product of Array Except Self**
@@ -80,17 +90,25 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 274: H-Index**
 - **Problem 289: Game of Life**
 - **Problem 290: Word Pattern**
+- **Problem 295: Find Median from Data Stream**
+- **Problem 297: Serialize and Deserialize Binary Tree**
 - **Problem 347: Top K Frequent Elements**
+- **Problem 355: Design Twitter**
 - **Problem 392: Is Subsequence**
 - **Problem 424: Longest Repeating Character Replacement**
 - **Problem 452: Minimun Number of Arrows to Burst Balloons**
 - **Problem 543: Diameter of Binary Tree**
 - **Problem 567: Permutation in String**
 - **Problem 572: Subtree of Another Tree**
+- **Problem 621: Task Scheduler**
 - **Problem 637: Average of Levels in Binary Tree**
+- **Problem 703: Kth Largest Element in a Stream**
 - **Problem 704: Binary Search**
 - **Problem 739: Daily Temperatures**
 - **Problem 853: Car Fleet**
 - **Problem 875: Koko Eating Bananas**
+- **Problem 973: K Closest Points to Origin**
 - **Problem 981: Time Based Key-Value Store**
+- **Problem 1046: Last Stone Weight**
 - **Problem 1448: Count Good Nodes in Binary Tree**
+- **Problem 1480: Running Sum of 1d Array**
