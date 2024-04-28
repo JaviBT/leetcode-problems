@@ -25,6 +25,33 @@ class Solution:
         }
 
         ret = []
+
+        def dfs(i, cur):
+            if len(cur) >= len(digits):
+                ret.append(cur)
+                return
+
+            for char in DICT[digits[i]]:
+                dfs(i+1, cur + char)
+
+        if digits: dfs(0, '')
+        return ret
+    
+
+class Solution2:
+    def letterCombinations(self, digits: str) -> [str]:
+        DICT = {
+            '2': ['a', 'b', 'c'],
+            '3': ['d', 'e', 'f'],
+            '4': ['g', 'h', 'i'],
+            '5': ['j', 'k', 'l'],
+            '6': ['m', 'n', 'o'],
+            '7': ['p', 'q', 'r', 's'],
+            '8': ['t', 'u', 'v'],
+            '9': ['w', 'x', 'y', 'z'],
+        }
+
+        ret = []
         cur = []
 
         def dfs(i):
