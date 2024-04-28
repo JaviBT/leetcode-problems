@@ -12,6 +12,14 @@
 
 class Solution:
     def singleNumber(self, nums: [int]) -> int:
+        xor = 0
+        for num in nums:
+            xor ^= num
+        return xor
+
+
+class Solution2:
+    def singleNumber(self, nums: [int]) -> int:
         
         dic = {}
 
