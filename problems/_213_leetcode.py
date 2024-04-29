@@ -1,5 +1,5 @@
-# 198. House Robber
-# https://leetcode.com/problems/house-robber
+# 213. House Robber II
+# https://leetcode.com/problems/house-robber-ii
 
 # Solution by: Javi Barranco
 
@@ -8,42 +8,28 @@
 # Given a list of non-negative integers nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
 
 # Example 1:
-# Input: nums = [1,2,3,1]
-# Output: 4
+# Input: nums = [2,3,2]
+# Output: 3
 
 class Solution:
     def rob(self, nums: [int]) -> int:
-        dp = [None] * len(nums)
+        def houseRob(nums: [int]) -> int:
+            rob1, rob2 = 0, 0
 
-        def robRec(i: int):
-            if i >= len(nums):
-                return 0
-            if dp[i] != None:
-                return dp[i]
+            for i in range(len(nums)):
+                temp = max(rob1 + nums[i], rob2)
+                rob1, rob2 = rob2, temp
 
-            dp[i] = max(robRec(i+1), nums[i] + robRec(i+2))
-            return dp[i]
+            return temp
 
-        robRec(0)
-        return max(dp)
-    
-
-class Solution2:
-    def rob(self, nums: [int]) -> int:
-        rob1, rob2 = 0, 0
-
-        for i in range(len(nums)):
-            temp = max(rob1 + nums[i], rob2)
-            rob1, rob2 = rob2, temp
-        
-        return max(rob1, rob2)
+        return max(houseRob(nums[1:]), houseRob(nums[:-1])) if len(nums) > 1 else nums[0]
     
 
 exercise = Solution()
 
-input = [1,2,3,1]
+input = [2,3,2]
 
-expected_output = 4
+expected_output = 3
 
 output = exercise.rob(input)
 print(output)
