@@ -3,7 +3,46 @@
 
 # Solution by: Javi Barranco
 
+# Problem:
+# Given an m x n matrix, return all elements of the matrix in spiral order.
+
+# Example 1:
+# Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+# Output: [1,2,3,6,9,8,7,4,5]
+
 class Solution:
+    def spiralOrder(self, matrix: [[int]]) -> [int]:
+        res = []
+        l, r = 0, len(matrix[0]) - 1
+        t, b = 0, len(matrix) - 1
+
+        while True:
+            # Move to the Top Right
+            for num in matrix[t][l:r+1]:
+                res.append(num)
+            t += 1
+            if t > b: break
+            # Move to the Bottom Right
+            for i in matrix[t:b+1]:
+                res.append(i[r])
+            r -= 1
+            if r < l: break
+            # Move to the Bottom Left
+            for num in matrix[b][r:l-1 if l != 0 else 0:-1]:
+                res.append(num)
+            if l == 0: res.append(matrix[b][0])
+            b -= 1
+            if b < t: break
+            # Move to the Top Left
+            for i in matrix[b:t-1:-1]:
+                res.append(i[l])
+            l += 1
+            if l > r: break
+
+        return res
+    
+
+class Solution2:
     def spiralOrder(self, matrix: [[int]]) -> [int]:
         
         top = 0
