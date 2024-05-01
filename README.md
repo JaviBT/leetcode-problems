@@ -2,17 +2,21 @@
 
 This repository contains my solutions to various LeetCode problems. Happy coding! 🚀
 
-## Problems Solved: (109) (Updated: 2024-04-28)
+## Problems Solved: (134) (Updated: 2024-05-01)
 - **Problem 1: Two Sum**
 - **Problem 2: Add Two Numbers**
 - **Problem 3: Longest Substring Without Repeating Characters**
+- **Problem 5: Longest Palindromic Substring**
 - **Problem 6: Zigzag Conversion**
+- **Problem 7: Reverse Integer**
 - **Problem 9: Palindrome Number**
 - **Problem 11: Container With Most Water**
 - **Problem 12: Integer to Roman**
 - **Problem 15: 3Sum**
+- **Problem 17: Letter Combinations of a Phone Number**
 - **Problem 19: Remove Nth Node From End of List**
 - **Problem 20: Valid Parentheses**
+- **Problem 21: Merge Two Sorted Lists**
 - **Problem 22: Generate Parentheses**
 - **Problem 28: Find the Index of the First Occurrence in a String**
 - **Problem 33: Search in Rotated Sorted Array**
@@ -20,16 +24,21 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 39: Combination Sum**
 - **Problem 40: Combination Sum II**
 - **Problem 42: Trapping Rain Water**
+- **Problem 43: Multiply Strings**
 - **Problem 45: Jump Game II**
 - **Problem 46: Permutations**
 - **Problem 48: Rotate Image**
 - **Problem 49: Group Anagrams**
+- **Problem 50: Pow(x, n)**
+- **Problem 51: N-Queens**
 - **Problem 54: Spiral Matrix**
 - **Problem 55: Jump Game**
 - **Problem 56: Merge Intervals**
 - **Problem 57: Insert Interval**
 - **Problem 61: Rotate List**
+- **Problem 66: Plus One**
 - **Problem 67: Add Binary**
+- **Problem 70: Climbing Stairs**
 - **Problem 73: Set Matrix Zeroes**
 - **Problem 74: Search a 2D Matrix**
 - **Problem 76: MInimun Window Substring**
@@ -40,6 +49,7 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 83: Remove Duplicates from Sorted List**
 - **Problem 86: Partition List**
 - **Problem 90: Subsets II**
+- **Problem 91: Decode Ways**
 - **Problem 92: Reverse Linked List II**
 - **Problem 98: Validate Binary Search Tree**
 - **Problem 100: Same Tree**
@@ -59,23 +69,28 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 125: Valid Palindrome**
 - **Problem 128: Longest Consecutive Sequence**
 - **Problem 129: Sum Root to Leaf Numbers**
+- **Problem 131: Palindrome Partitioning**
 - **Problem 134: Gas Station**
 - **Problem 136: Single Number**
+- **Problem 139: Word Break**
 - **Problem 141: Linked List Cycle**
 - **Problem 150: Evaluate Reverse Polish Notation**
 - **Problem 151: Reverse Words in a String**
+- **Problem 152: Maximum Product Subarray**
 - **Problem 153: Find Minimum in Rotated Sorted Array**
 - **Problem 167: Two Sum II - Input array is sorted**
 - **Problem 169: Majority Element**
 - **Problem 189: Rotate Array**
 - **Problem 190: Reverse Bits**
 - **Problem 191: Number of 1 Bits**
+- **Problem 198: House Robber**
 - **Problem 199: Binary Tree Right Side View**
 - **Problem 200: Number of Islands**
 - **Problem 202: Happy Number**
 - **Problem 205: Isomorphic Strings**
 - **Problem 206: Reverse Linked List**
 - **Problem 209: Minimum Size Subarray Sum**
+- **Problem 213: House Robber II**
 - **Problem 215: Kth Largest Element in an Array**
 - **Problem 217: Contains Duplicate**
 - **Problem 219: Contains Duplicate II**
@@ -87,14 +102,20 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 236: Lowest Common Ancestor of a Binary Tree**
 - **Problem 238: Product of Array Except Self**
 - **Problem 242: Valid Anagram**
+- **Problem 268: Missing Number**
 - **Problem 274: H-Index**
 - **Problem 289: Game of Life**
 - **Problem 290: Word Pattern**
 - **Problem 295: Find Median from Data Stream**
 - **Problem 297: Serialize and Deserialize Binary Tree**
+- **Problem 300: Longest Increasing Subsequence**
+- **Problem 322: Coin Change**
+- **Problem 338: Counting Bits**
 - **Problem 347: Top K Frequent Elements**
 - **Problem 355: Design Twitter**
+- **Problem 371: Sum of Two Integers**
 - **Problem 392: Is Subsequence**
+- **Problem 416: Partition Equal Subset Sum**
 - **Problem 424: Longest Repeating Character Replacement**
 - **Problem 452: Minimun Number of Arrows to Burst Balloons**
 - **Problem 543: Diameter of Binary Tree**
@@ -102,9 +123,11 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 572: Subtree of Another Tree**
 - **Problem 621: Task Scheduler**
 - **Problem 637: Average of Levels in Binary Tree**
+- **Problem 647: Palindromic Substrings**
 - **Problem 703: Kth Largest Element in a Stream**
 - **Problem 704: Binary Search**
 - **Problem 739: Daily Temperatures**
+- **Problem 746: Min Cost Climbing Stairs**
 - **Problem 853: Car Fleet**
 - **Problem 875: Koko Eating Bananas**
 - **Problem 973: K Closest Points to Origin**
@@ -112,3 +135,5 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 1046: Last Stone Weight**
 - **Problem 1448: Count Good Nodes in Binary Tree**
 - **Problem 1480: Running Sum of 1d Array**
+- **Problem 2000: Reverse Prefix of Word**
+- **Problem 2013: Detect Squares**
