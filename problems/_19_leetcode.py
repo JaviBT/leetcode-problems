@@ -8,7 +8,42 @@ class ListNode:
         self.val = val
         self.next = next
 
+def sameLinkedList(head1: [ListNode], head2: [ListNode]) -> bool:
+    while head1 != None and head2 != None:
+        if head1.val != head2.val:
+            return False
+        head1 = head1.next
+        head2 = head2.next
+    
+    return head1 == None and head2 == None
+
+
 class Solution:
+    def removeNthFromEnd(self, head: [ListNode], n: int) -> [ListNode]:
+        res = ListNode()
+        curHead = head
+        res.next = curHead
+
+        listLen = 0
+        while curHead != None:
+            listLen += 1
+            curHead = curHead.next
+        curHead = res
+
+        i = 0
+        n = listLen - n + 1
+        while curHead is not None:
+            if i == n - 1:
+                curHead.next = curHead.next.next
+                break
+            
+            curHead = curHead.next
+            i += 1
+
+        return res.next
+
+
+class Solution2:
     def removeNthFromEnd(self, head: [ListNode], n: int) -> [ListNode]:
         
         origin = head
@@ -34,21 +69,15 @@ class Solution:
             index += 1
 
         return origin
-        
-    def sameLinkedList(self, head1: [ListNode], head2: [ListNode]) -> bool:
-        while head1 != None and head2 != None:
-            if head1.val != head2.val:
-                return False
-            head1 = head1.next
-            head2 = head2.next
-        
-        return head1 == None and head2 == None
     
 
 exercise = Solution()
+
 input = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+
 expected_output = ListNode(1, ListNode(2, ListNode(3, ListNode(5))))
+
 output = exercise.removeNthFromEnd(input, 2)
 print(output)
-assert exercise.sameLinkedList(output, expected_output), "Wrong answer"
+assert sameLinkedList(output, expected_output), "Wrong answer"
 print("Accepted")
