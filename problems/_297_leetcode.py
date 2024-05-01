@@ -27,6 +27,7 @@ def sameTree(t1, t2):
 
     return sameTree(t1.left, t2.left) and sameTree(t1.right, t2.right)
 
+
 class Codec:
 
     def serialize(self, root):
