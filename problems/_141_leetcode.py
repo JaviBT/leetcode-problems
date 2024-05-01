@@ -19,6 +19,19 @@ class Solution:
         return False
     
 
+class Solution2:
+    def hasCycle(self, head: [ListNode]) -> bool:
+        visited = set()
+
+        cur = head
+        while cur:
+            if cur in visited: return True
+            visited.add(cur)
+            cur = cur.next
+
+        return False
+    
+
 exercise = Solution()
 
 head = ListNode(0)

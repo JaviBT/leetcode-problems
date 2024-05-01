@@ -15,9 +15,20 @@
 
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    def __init__(self, x = 0):
         self.val = x
         self.next = None
+
+def same(l1, l2):
+    while l1 != None and l2 != None:
+        if l1.val != l2.val: return False
+        l1 = l1.next
+        l2 = l2.next
+    
+    if l1 != None or l2 != None: return False
+    
+    return True
+
 
 class Solution:
     def addTwoNumbers(self, l1, l2):
@@ -38,15 +49,33 @@ class Solution:
             
         return sol.next
     
-    def same(self, l1, l2):
-        while l1 != None and l2 != None:
-            if l1.val != l2.val: return False
-            l1 = l1.next
-            l2 = l2.next
-        
-        if l1 != None or l2 != None: return False
-        
-        return True
+
+class Solution2:
+    def addTwoNumbers(self, l1: [ListNode], l2: [ListNode]) -> [ListNode]:
+        res = ListNode()
+        cur = res
+        carry = 0
+        # Sum until one list runs out
+        while l1 and l2:
+            cur.next = ListNode((l1.val + l2.val + carry) % 10)
+            carry = int((l1.val + l2.val + carry) / 10)
+            cur = cur.next
+            l1, l2 = l1.next, l2.next
+
+        if l1 != None: rem = l1
+        else: rem = l2
+
+        # Continue with the remaining list
+        while rem != None:
+            cur.next = ListNode((rem.val + carry) % 10)
+            carry = int((rem.val + carry) / 10)
+            cur = cur.next
+            rem = rem.next
+
+        # Add final carry
+        if carry == 1: cur.next = ListNode(1)
+
+        return res.next
     
 
 exercise = Solution()
@@ -65,5 +94,5 @@ expected_output.next.next = ListNode(8)
 
 output = exercise.addTwoNumbers(input, input2)
 print(output)
-assert exercise.same(output, expected_output), "Wrong answer"
+assert same(output, expected_output), "Wrong answer"
 print("Accepted")
