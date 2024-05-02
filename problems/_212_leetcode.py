@@ -69,5 +69,7 @@ output = exercise.findWords(*input)
 expected_output = ["eat","oath"]
 
 print(output)
-assert output == expected_output, "Wrong answer"
+assert len(output) == len(expected_output), "Wrong answer"
+for out in output:
+    assert out in expected_output, "Wrong answer"
 print("Accepted")

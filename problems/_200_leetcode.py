@@ -5,6 +5,35 @@
 
 class Solution:
     def numIslands(self, grid: [[str]]) -> int:
+        m, n = len(grid), len(grid[0])
+        visited = set()
+        cnt = 0
+
+        def coverIsland(i: int , j: int):
+            if (i < 0 or j < 0 or
+                i >= m or j >= n or
+                (i, j) in visited or
+                grid[i][j] == '0'): return
+            
+            visited.add((i, j))
+            coverIsland(i + 1, j)
+            coverIsland(i - 1, j)
+            coverIsland(i, j + 1)
+            coverIsland(i, j - 1)
+
+        for i in range(m):
+            for j in range(n):
+                if (i, j) in visited: 
+                    continue
+                if grid[i][j] == '1':
+                    cnt += 1
+                    coverIsland(i, j)
+
+        return cnt
+    
+
+class Solution2:
+    def numIslands(self, grid: [[str]]) -> int:
 
         m = len(grid)
         n = len(grid[0])
