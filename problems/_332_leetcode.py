@@ -12,8 +12,28 @@
 # Output: ["JFK","MUC","LHR","SFO","SJC"]
 
 from typing import List
+from collections import defaultdict
 
-class Solution: # Optimized DFS
+class Solution: # Clean and Optimized DFS
+    def findItinerary(self, tickets: List[List[str]]) -> List[str]:
+        graph = defaultdict(list)
+
+        for src, dst in sorted(tickets, reverse=True):
+            graph[src].append(dst)
+
+        itinerary = []
+
+        def dfs(airport):
+            while graph[airport]:
+                dfs(graph[airport].pop())
+            itinerary.append(airport)
+
+        dfs("JFK")
+
+        return itinerary[::-1]
+    
+
+class Solution2: # Optimized DFS
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         adj = {src: [] for src, dst in tickets}
         res = []
@@ -43,7 +63,7 @@ class Solution: # Optimized DFS
         return res
 
 
-class Solution2: # Brute force DFS that Times Out
+class Solution3: # Brute force DFS that Times Out
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         n = len(tickets)
         res = []
@@ -73,8 +93,8 @@ class Solution2: # Brute force DFS that Times Out
         dfs('JFK', n)
         return res
     
-    
-class Solution3: # Cleaner - Brute force DFS that Times Out
+
+class Solution4: # Cleaner - Brute force DFS that Times Out
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         res = ['JFK']
 
