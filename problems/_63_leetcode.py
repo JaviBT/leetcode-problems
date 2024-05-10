@@ -24,7 +24,7 @@ class Solution: # Using combinatorial formula
         return int(res)
     
 
-class Solution: # Using dynamic programming
+class Solution2: # Using dynamic programming
     def uniquePaths(self, m: int, n: int) -> int:
         next_row = [1] * n
 
