@@ -2,7 +2,7 @@
 
 This repository contains my solutions to various LeetCode problems. Happy coding! 🚀
 
-## Problems Solved: (178) (Updated: 2024-05-09)
+## Problems Solved: (195) (Updated: 2024-05-13)
 - **Problem 1: Two Sum**
 - **Problem 2: Add Two Numbers**
 - **Problem 3: Longest Substring Without Repeating Characters**
@@ -11,6 +11,7 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 6: Zigzag Conversion**
 - **Problem 7: Reverse Integer**
 - **Problem 9: Palindrome Number**
+- **Problem 10: Regular Expression Matching**
 - **Problem 11: Container With Most Water**
 - **Problem 12: Integer to Roman**
 - **Problem 15: 3Sum**
@@ -40,9 +41,11 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 56: Merge Intervals**
 - **Problem 57: Insert Interval**
 - **Problem 61: Rotate List**
+- **Problem 63: Unique Paths**
 - **Problem 66: Plus One**
 - **Problem 67: Add Binary**
 - **Problem 70: Climbing Stairs**
+- **Problem 72: Edit Distance**
 - **Problem 73: Set Matrix Zeroes**
 - **Problem 74: Search a 2D Matrix**
 - **Problem 76: MInimun Window Substring**
@@ -56,6 +59,7 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 90: Subsets II**
 - **Problem 91: Decode Ways**
 - **Problem 92: Reverse Linked List II**
+- **Problem 97: Interleaving String**
 - **Problem 98: Validate Binary Search Tree**
 - **Problem 100: Same Tree**
 - **Problem 101: Symmetric Tree**
@@ -66,6 +70,7 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 110: Balanced Binary Tree**
 - **Problem 112: Path Sum**
 - **Problem 114: Flatten Binary Tree to Linked List**
+- **Problem 115: Distinct Subsequences**
 - **Problem 117: Populating Next Right Pointers in Each Node II**
 - **Problem 118: Pascal's Triangle**
 - **Problem 121: Best Time to Buy and Sell Stock**
@@ -134,8 +139,11 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 295: Find Median from Data Stream**
 - **Problem 297: Serialize and Deserialize Binary Tree**
 - **Problem 300: Longest Increasing Subsequence**
+- **Problem 309: Best Time to Buy and Sell Stock with Cooldown**
+- **Problem 312: Burst Balloons**
 - **Problem 322: Coin Change**
 - **Problem 323: Number of Connected Components in an Undirected Graph**
+- **Problem 329: Longest Increasing Path in a Matrix**
 - **Problem 332: Reconstruct Itinerary**
 - **Problem 338: Counting Bits**
 - **Problem 347: Top K Frequent Elements**
@@ -147,7 +155,9 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 424: Longest Repeating Character Replacement**
 - **Problem 435: Non-overlapping Intervals**
 - **Problem 452: Minimun Number of Arrows to Burst Balloons**
+- **Problem 494: Target Sum**
 - **Problem 506: Relative Ranks**
+- **Problem 518: Coin Change II**
 - **Problem 535: Encode and Decode TinyURL**
 - **Problem 543: Diameter of Binary Tree**
 - **Problem 567: Permutation in String**
@@ -161,8 +171,12 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 703: Kth Largest Element in a Stream**
 - **Problem 704: Binary Search**
 - **Problem 739: Daily Temperatures**
+- **Problem 743: Network Delay Time**
 - **Problem 746: Min Cost Climbing Stairs**
 - **Problem 763: Partition Labels**
+- **Problem 778: Swim in Rising Water**
+- **Problem 786: K-th Smallest Prime Fraction**
+- **Problem 787: Cheapest Flights Within K Stops**
 - **Problem 846: Hand of Straights**
 - **Problem 853: Car Fleet**
 - **Problem 875: Koko Eating Bananas**
@@ -171,12 +185,15 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 981: Time Based Key-Value Store**
 - **Problem 994: Rotting Oranges**
 - **Problem 1046: Last Stone Weight**
+- **Problem 1143: Longest Common Subsequence**
 - **Problem 1448: Count Good Nodes in Binary Tree**
 - **Problem 1480: Running Sum of 1d Array**
+- **Problem 1584: Min Cost to Connect All Points**
 - **Problem 1851: Minimun Interval to Include Each Query**
 - **Problem 1899: Merge triplets to form target triplet**
 - **Problem 2000: Reverse Prefix of Word**
 - **Problem 2013: Detect Squares**
+- **Problem 2373: Largest Local Values in a Matrix**
 - **Problem 2441: Largest Positive Integer That Exists With Its Negative**
 - **Problem 2487: Remove Nodes From Linked List**
 - **Problem 2816: Double a Number Represented as Linked List**
