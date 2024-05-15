@@ -10,6 +10,8 @@
 # Input: s = "ADOBECODEBANC", t = "ABC"
 # Output: "BANC"
 
+import math
+
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         best_substring = s + t
@@ -38,6 +40,45 @@ class Solution:
         
         if best_substring == s + t: return ''
         return best_substring 
+    
+
+class Solution2: # Not optimal solution
+    def minWindow(self, s: str, t: str) -> str:
+        l, r = 0, 0
+        char_map = {} # char : count (inside current window)
+        min_len = math.inf
+        res = ''
+
+        for char in t:
+            char_map[char] = char_map.get(char, 0) + 1
+
+        while r < len(s): # This loop is O(n)
+            cur = s[r]
+            if cur in char_map:
+                char_map[cur] -= 1
+
+            # Update min. window if all char have count <= 0
+            update_l = False
+            for i, (key, val) in enumerate(char_map.items()):
+                if val > 0: 
+                    break
+                if i == len(char_map.items()) - 1: 
+                    if r - l + 1 < min_len:
+                        res = s[l:r+1]
+                        min_len = r - l + 1
+                    update_l = True
+
+            if update_l:
+                while l <= r and (s[l] not in char_map or char_map[s[l]] + 1 <= 0):
+                    if s[l] in char_map: char_map[s[l]] += 1
+                    l += 1
+                    if r - l + 1 < min_len:
+                        res = s[l:r+1]
+                        min_len = r - l + 1
+
+            r += 1
+        
+        return res
     
 
 exercise = Solution()
