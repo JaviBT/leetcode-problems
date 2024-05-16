@@ -1,4 +1,4 @@
-# Path with Maximum Gold
+# 1219. Path with Maximum Gold
 # https://leetcode.com/problems/path-with-maximum-gold/
 
 # Solution by: Javi Barranco
