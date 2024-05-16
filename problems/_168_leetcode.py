@@ -45,5 +45,6 @@ input = 701
 expected_output = "ZY"
 
 output = exercise.convertToTitle(input)
+print(output)
 assert output == expected_output, "Wrong answer"
 print("Accepted")

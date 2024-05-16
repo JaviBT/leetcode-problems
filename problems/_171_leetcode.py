@@ -39,5 +39,6 @@ input = "ZY"
 expected_output = 701
 
 output = exercise.titleToNumber(input)
+print(output)
 assert output == expected_output, "Wrong answer"
 print("Accepted")
