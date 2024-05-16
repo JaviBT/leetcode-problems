@@ -2,7 +2,7 @@
 
 This repository contains my solutions to various LeetCode problems. Happy coding! 🚀
 
-## Problems Solved: (195) (Updated: 2024-05-13)
+## Problems Solved: (214) (Updated: 2024-05-16)
 - **Problem 1: Two Sum**
 - **Problem 2: Add Two Numbers**
 - **Problem 3: Longest Substring Without Repeating Characters**
@@ -67,12 +67,15 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 104: Maximun Depth of Binary Tree**
 - **Problem 105: Construct Binary Tree from Preorder and Inorder Traversal**
 - **Problem 106: Construct Binary Tree from Inorder and Postorder Traversal**
+- **Problem 108: Convert Sorted Array to Binary Search Tree**
 - **Problem 110: Balanced Binary Tree**
+- **Problem 111: Minimun Depth of Binary Tree**
 - **Problem 112: Path Sum**
 - **Problem 114: Flatten Binary Tree to Linked List**
 - **Problem 115: Distinct Subsequences**
 - **Problem 117: Populating Next Right Pointers in Each Node II**
 - **Problem 118: Pascal's Triangle**
+- **Problem 119: Pascal's Triangle II**
 - **Problem 121: Best Time to Buy and Sell Stock**
 - **Problem 122: Best Time to Buy and Sell Stock II**
 - **Problem 124: Binary Tree Maximum Path Sum**
@@ -89,15 +92,20 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 139: Word Break**
 - **Problem 141: Linked List Cycle**
 - **Problem 143: Reorder List**
+- **Problem 144: Binary Tree Preorder Traversal**
+- **Problem 145: Binary Tree Postorder Traversal**
 - **Problem 146: LRU Cache**
 - **Problem 150: Evaluate Reverse Polish Notation**
 - **Problem 151: Reverse Words in a String**
 - **Problem 152: Maximum Product Subarray**
 - **Problem 153: Find Minimum in Rotated Sorted Array**
 - **Problem 155: Min Stack**
+- **Problem 160: Intersection of Two Linked Lists**
 - **Problem 165: Compare Version Numbers**
 - **Problem 167: Two Sum II - Input array is sorted**
+- **Problem 168: Excel Sheet Column Title**
 - **Problem 169: Majority Element**
+- **Problem 171: Excel Sheet Column Number**
 - **Problem 178: Graph Valid Tree**
 - **Problem 189: Rotate Array**
 - **Problem 190: Reverse Bits**
@@ -106,6 +114,7 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 199: Binary Tree Right Side View**
 - **Problem 200: Number of Islands**
 - **Problem 202: Happy Number**
+- **Problem 203: Remove Linked List Elements**
 - **Problem 205: Isomorphic Strings**
 - **Problem 206: Reverse Linked List**
 - **Problem 207: Course Schedule**
@@ -122,6 +131,7 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 226: Invert Binary Tree**
 - **Problem 228: Summary Ranges**
 - **Problem 230: Kth Smallest Element in a BST**
+- **Problem 231: Power of Two**
 - **Problem 235: Lowest Common Ancestor of a Binary Search Tree**
 - **Problem 236: Lowest Common Ancestor of a Binary Tree**
 - **Problem 237: Delete Node in a Linked List**
@@ -130,6 +140,9 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 242: Valid Anagram**
 - **Problem 252: Meeting Rooms**
 - **Problem 253: Meeting Rooms II**
+- **Problem 257: Binary Tree Paths**
+- **Problem 258: Add Digits**
+- **Problem 263: Ugly Number**
 - **Problem 268: Missing Number**
 - **Problem 274: H-Index**
 - **Problem 286: Walls and Gates**
@@ -162,6 +175,7 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 543: Diameter of Binary Tree**
 - **Problem 567: Permutation in String**
 - **Problem 572: Subtree of Another Tree**
+- **Problem 581: Shortest Unsorted Continuous Subarray**
 - **Problem 621: Task Scheduler**
 - **Problem 637: Average of Levels in Binary Tree**
 - **Problem 647: Palindromic Substrings**
@@ -186,15 +200,20 @@ This repository contains my solutions to various LeetCode problems. Happy coding
 - **Problem 994: Rotting Oranges**
 - **Problem 1046: Last Stone Weight**
 - **Problem 1143: Longest Common Subsequence**
+- **Problem 1219: Path with Maximum Gold**
+- **Problem 1293: Shortest Path in a Grid with Obstacles Elimination**
 - **Problem 1448: Count Good Nodes in Binary Tree**
 - **Problem 1480: Running Sum of 1d Array**
 - **Problem 1584: Min Cost to Connect All Points**
+- **Problem 1631: Path With Minimum Effort**
 - **Problem 1851: Minimun Interval to Include Each Query**
 - **Problem 1899: Merge triplets to form target triplet**
 - **Problem 2000: Reverse Prefix of Word**
 - **Problem 2013: Detect Squares**
+- **Problem 2331: Evaluate Boolean Binary Tree**
 - **Problem 2373: Largest Local Values in a Matrix**
 - **Problem 2441: Largest Positive Integer That Exists With Its Negative**
 - **Problem 2487: Remove Nodes From Linked List**
+- **Problem 2812: Find the Safest Path in a Grid**
 - **Problem 2816: Double a Number Represented as Linked List**
 - **Problem 3075: Maximize Happiness of Selected Children**
