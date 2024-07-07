@@ -51,6 +51,25 @@ class Solution2: # Recursive solution with memoization
         return rec(0, 0)
     
 
+class Solution3:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        n, m = len(text1), len(text2)
+
+        dp2 = []
+        for _ in range(n + 1):
+            row = [0] * (m + 1)
+            dp2.append(row)
+
+        for i in range(n - 1, -1, -1):
+            for j in range(m - 1, -1, -1):
+                if text1[i] != text2[j]:
+                    dp2[i][j] = max(dp2[i + 1][j], dp2[i][j + 1])
+                else:
+                    dp2[i][j] = 1 + dp2[i + 1][j + 1]
+
+        return dp2[0][0]
+    
+
 exercise = Solution()
 
 input = [
